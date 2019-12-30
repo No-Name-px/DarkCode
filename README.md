@@ -9,4 +9,4 @@ Some CSS/HTML/JS fitures
 
 [INST]( https://www.instagram.com/__face1ess__ "My in]stagram")
 
-[Lesson 1](https://no-name-px.github.io/Responsive%20NavBar/) - Responsive Navbar
+[Lesson 1](https://no-name-px.github.io/L1%20Responsive%20NavBar/) - Responsive Navbar
