@@ -1,0 +1,53 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 100vh;
+	width: 100%;
+
+	background-color: bisque;
+}
+button{
+	border: none;
+
+	overflow: hidden;
+	width: 100px;
+	height: 100px;
+
+	margin: 20px;
+	border-radius: 50%;
+
+	color: #fff;
+
+	position: relative;
+}
+i{
+	margin: auto;
+}
+.button-inner{
+	width: 100%;
+	height: 200%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	transition: top 0.4s linear;
+}
+button:focus{
+	outline: none;
+}
+button:hover .button-inner{
+	top: -100%;
+}
