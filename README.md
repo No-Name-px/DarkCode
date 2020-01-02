@@ -12,3 +12,5 @@ Some CSS/HTML/JS fitures
 [Lesson 1](https://no-name-px.github.io/L1%20Responsive%20NavBar/) - Responsive Navbar
 
 [Lesson 2](https://no-name-px.github.io/L2%20Dubbed%20Hover%20Effect/) - Dubbed Hover Effect
+
+[Lesson 3](https://no-name-px.github.io/L3%20Animated%20Clock/) - Animates Clock + bg Gradient
