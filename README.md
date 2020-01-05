@@ -16,3 +16,5 @@ Some CSS/HTML/JS fitures
 [Lesson 3](https://no-name-px.github.io/L3%20Animated%20Clock/) - Animated Clock + bg Gradient
 
 [Lesson 4](https://no-name-px.github.io/L4%20Pulse%20Anim/) - Pulse Animation
+
+[Lesson 5](https://no-name-px.github.io/L5%20Simple%20Card/) - Simple Card
