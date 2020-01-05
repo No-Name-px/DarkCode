@@ -1,0 +1,93 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	color: rgb(63, 63, 63);
+}
+body{
+	width: 100%;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card{
+	width: 300px;
+	box-shadow: 0 0 20px rgb(63, 63, 63);
+}
+.photo{
+	width: 100%;
+	height: 150px;
+
+	background: 10% url("img.png") no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.photo::before{
+	content: "";
+
+	position: absolute;
+	bottom: 0;
+	border-top: 40px solid transparent;
+	border-left: 300px solid #fff;
+}
+.information{
+	margin: 25px 0;
+	text-align: center;
+	padding: 0 10px;
+}
+h2{
+	font-size: 25px;
+	text-transform: uppercase;
+}
+h4{
+	margin-top: 5px;
+	font-size: 15px;
+	color: grey;
+}
+p{
+	margin-top: 20px;
+	font-size: 14px;
+}
+.contacts{
+	margin: 0 20px 25px 20px;
+	display: flex;
+	justify-content: space-around;
+}
+li{
+	width: 30px;
+	height: 30px;
+	background-color: rgb(63, 63, 63);
+	border-radius: 50%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	cursor: pointer;
+	transition: transform .2s linear;
+}
+li:hover{
+	transform: scale(1.2)
+}
+i{
+	font-size: 15px;
+	color: #fff;
+}
+footer{
+	width: 100%;
+	height: 100px;
+	background-color: rgb(63, 63, 63);
+
+	position: relative;
+}
+footer::before{
+	content: "";
+
+	position: absolute;
+	top: 0;
+	border-bottom: 40px solid transparent;
+	border-right: 300px solid #fff;
+}
