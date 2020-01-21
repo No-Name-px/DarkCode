@@ -19,4 +19,4 @@ Some CSS/HTML/JS fitures
 
 [Lesson 5](https://no-name-px.github.io/L5%20Simple%20Card/) - Simple Card
 
-[Lesson 6](https://no-name-px.github.io/L6%HoverEffect%-%Slide%in%Overlay%from%the%Left/) - Hover - Slide in Overlay from the Left
+[Lesson 6](https://no-name-px.github.io/No-Name-px.github.io/L6%20HoverEffect%20-%20Slide%20in%20Overlay%20from%20the%20Left/) - Hover - Slide in Overlay from the Left
