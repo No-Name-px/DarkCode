@@ -1,0 +1,74 @@
+/* 
+
+
+
+*/
+
+/* ==============================
+1)1400px 
+================================*/
+@media only screen and (max-width: 1400px) {
+  header {
+    width: calc(100% - 140px);
+    left: 70px;
+  }
+}
+
+/* ==============================
+2)1200px 
+================================*/
+@media only screen and (max-width: 1200px) {
+  header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/* ==============================
+3)1100px 
+================================*/
+@media only screen and (max-width: 1100px) {
+  nav.main-nav {
+    min-width: 350px;
+  }
+  .header-social-networks {
+    min-width: 140px;
+  }
+}
+
+/* ==============================
+4)950px 
+================================*/
+@media only screen and (max-width: 950px) {
+  nav.main-nav {
+    display: none;
+  }
+  .header-social-networks {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+/* ==============================
+5)750px 
+================================*/
+@media only screen and (max-width: 750px) {
+  header {
+    width: calc(100% - 60px);
+    top: 30px;
+    left: 30px;
+  }
+}
+
+/* ==============================
+6)550px 
+================================*/
+@media only screen and (max-width: 550px) {
+  header {
+    width: calc(100% - 30px);
+    top: 15px;
+    left: 15px;
+  }
+}
