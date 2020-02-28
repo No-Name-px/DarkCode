@@ -7,13 +7,14 @@ MAIN.js
 */
 
 $(function() {
+  // MENU ===================================
   if ($(".humburger") && $(".menu-close")) {
-    var menu = $(".menu");
-    var hamburger = $(".hamburger");
-    var close = $(".menu-close");
-    var door = $(".menu-door");
-    var menuContent = $(".menu-content");
-    var navMenuItems = $(".menu-nav ul li");
+    let menu = $(".menu");
+    let hamburger = $(".hamburger");
+    let close = $(".menu-close");
+    let door = $(".menu-door");
+    let menuContent = $(".menu-content");
+    let navMenuItems = $(".menu-nav ul li");
 
     // OPEN MENU
 
@@ -59,6 +60,22 @@ $(function() {
         visibility: "hidden",
         delay: 0.9
       });
+    });
+  }
+
+  // SCROLL MENU
+
+  if ($(".fixed-header")) {
+    let fixedHeader = $(".fixed-header");
+
+    $(window).scroll(function() {
+      console.log($(this).scrollTop());
+
+      if ($(this).scrollTop() > 140) {
+        fixedHeader.css("top", "0px");
+      } else {
+        fixedHeader.css("top", "-80px");
+      }
     });
   }
 });
