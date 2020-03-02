@@ -1,0 +1,46 @@
+/* 
+
+
+
+*/
+
+/* ===================
+
+1)550px 
+
+====================*/
+
+@media only screen and (max-width: 550px) {
+  /* INTRO (SLIDER) */
+
+  .intro-slider .subtitle {
+    font-size: 14px;
+  }
+  .intro-slider h1.title {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-height: 650px) {
+  /* INTRO (SLIDER) */
+  .intro-slider .title-wrapper {
+    margin-bottom: 20px;
+  }
+  .intro-slider a.button {
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+  }
+  .intro-slider .slider-controller {
+    font-size: 14px;
+    width: 100px;
+    height: 35px;
+  }
+  .intro-slider .controller-item {
+    width: 10px;
+    height: 10px;
+  }
+  .intro-slider .controller-item.active {
+    width: 35px;
+    height: 35px;
+  }
+}
