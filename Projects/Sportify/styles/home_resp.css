@@ -1,27 +1,54 @@
-/* 
-
-
-
-*/
-
 /* ===================
 
-1)550px 
+HOME RESP
 
 ====================*/
 
-@media only screen and (max-width: 550px) {
-  /* INTRO (SLIDER) */
+@media only screen and (max-width: 1440px) {
+  /* ADVANTAGES ==================== */
 
-  .intro-slider .subtitle {
-    font-size: 14px;
-  }
-  .intro-slider h1.title {
-    font-size: 45px;
+  .advantage-item {
+    padding: 100px 40px;
   }
 }
+
+@media only screen and (max-width: 1200px) {
+  /* ABOUT SPORTIFY ==========================*/
+
+  .about-img img {
+    width: 290px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  /* ADVANTAGES ================= */
+
+  .our-advantages {
+    flex-direction: column;
+  }
+  .advantage-item {
+    padding: 100px 75px;
+  }
+
+  /* ABOUT SPORTIFY ================*/
+
+  .about-sportify {
+    flex-direction: column;
+  }
+  .about-info {
+    width: 100%;
+  }
+  .about-img {
+    margin-top: 70px;
+  }
+  .about-img img {
+    width: 80%;
+  }
+}
+
 @media only screen and (max-height: 650px) {
-  /* INTRO (SLIDER) */
+  /* INTRO (SLIDER) =============== */
+
   .intro-slider .title-wrapper {
     margin-bottom: 20px;
   }
@@ -42,5 +69,22 @@
   .intro-slider .controller-item.active {
     width: 35px;
     height: 35px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  /* INTRO (SLIDER) ============== */
+
+  .intro-slider .subtitle {
+    font-size: 14px;
+  }
+  .intro-slider h1.title {
+    font-size: 45px;
+  }
+
+  /* ADVANTAGES ================ */
+
+  .advantage-item {
+    padding: 100px 30px;
   }
 }

@@ -1,6 +1,8 @@
 /*
 
 1)INTRO SLIDER
+2)ADVANTAGES
+3)ABOUT
 
 */
 
@@ -62,39 +64,6 @@
 .intro-slider h1.title span {
   font-weight: 700;
 }
-.intro-slider a.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 180px;
-  height: 60px;
-
-  font-weight: 700;
-
-  background-color: transparent;
-  border: rgb(255, 14, 59) 2px solid;
-  overflow: hidden;
-
-  position: relative;
-}
-.intro-slider a.button span {
-  z-index: 1;
-}
-.intro-slider a.button::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: rgb(255, 14, 59);
-  width: 130%;
-  height: 320%;
-  transform-origin: center center;
-  transform: translate(-50%, -50%) rotate(-45deg);
-  transition: all 0.4s ease;
-}
-.intro-slider a.button:hover::before {
-  transform: translate(5%, 5%) rotate(-45deg);
-}
 .intro-slider .slider-controller-wrapper {
   width: 100%;
   position: absolute;
@@ -131,4 +100,62 @@
   background-color: rgb(255, 14, 59);
   width: 50px;
   height: 50px;
+}
+
+/* ADVANTAGES ======================================== */
+
+.our-advantages {
+  display: flex;
+
+  width: 100%;
+}
+.advantage-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 75px;
+  text-align: center;
+  color: #fff;
+}
+.advantage-item:nth-child(1) {
+  background-color: rgb(25, 10, 73);
+}
+.advantage-item:nth-child(2) {
+  background-color: rgb(60, 9, 141);
+}
+.advantage-item:nth-child(3) {
+  background-color: #ff0e3b;
+}
+.advantage-title {
+  color: #fff;
+  font-size: 18px;
+  margin: 30px 0;
+}
+.advantage-text {
+  color: #fff;
+}
+
+/* ABOUT SPORTIFY ==================================== */
+
+.about-sportify {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-info {
+  width: 60%;
+}
+.about-img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.about-img img {
+  width: 100%;
+  max-width: 349px;
+  max-height: 349px;
+  height: auto;
+}
+.about-info .button-1 {
+  margin-top: 30px;
 }

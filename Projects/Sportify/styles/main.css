@@ -36,9 +36,12 @@ a {
   cursor: pointer;
 }
 p {
-  line-height: 2.145;
+  line-height: 2.1;
   font-weight: 400;
   color: #909090;
+}
+section {
+  padding: 95px 0;
 }
 h1,
 h2,
@@ -51,10 +54,66 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
+h1.section-title {
+  font-size: 48px;
+  color: #2c2c2c;
+  margin-bottom: 30px;
+}
+.section-subtitle {
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #909090;
+  margin-bottom: 10px;
+}
 .container {
-  height: 100%;
-  width: 80%;
+  width: 90%;
   max-width: 1150px;
+  display: flex;
+  margin: auto;
+}
+
+/* BUTTONS ======================== */
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 182px;
+  height: 61px;
+
+  font-weight: 700;
+
+  background-color: transparent;
+  border: rgb(255, 14, 59) 2px solid;
+  overflow: hidden;
+
+  position: relative;
+}
+.button a {
+  text-transform: uppercase;
+  z-index: 1;
+}
+.button:hover a {
+  color: rgb(255, 14, 59);
+}
+.button-1::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgb(255, 14, 59);
+  width: 130%;
+  height: 320%;
+  transform-origin: center center;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: all 0.4s ease;
+}
+.button-1:hover::before {
+  transform: translate(5%, 5%) rotate(-45deg);
 }
 
 /* HEADER =========================== */

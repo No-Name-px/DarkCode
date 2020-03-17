@@ -1,39 +1,37 @@
 /* 
 
-
+	RESPONSIVE
 
 */
 
-/* ==============================
-1)1400px 
-================================*/
 @media only screen and (max-width: 1400px) {
+  /* HEADER ==================== */
 
-	/* HEADER ==================== */
   header {
     width: calc(100% - 140px);
     left: 70px;
   }
 }
 
-/* ==============================
-2)1200px 
-================================*/
 @media only screen and (max-width: 1200px) {
+  /* PREF */
 
-	/* HEADER ==================== */
+  .container {
+    width: 92%;
+    max-width: 930px;
+  }
+
+  /* HEADER ==================== */
+
   header {
     padding-left: 30px;
     padding-right: 30px;
   }
 }
 
-/* ==============================
-3)1100px 
-================================*/
 @media only screen and (max-width: 1100px) {
+  /* HEADER ==================== */
 
-	/* HEADER ==================== */
   nav.main-nav {
     min-width: 350px;
   }
@@ -42,12 +40,17 @@
   }
 }
 
-/* ==============================
-4)950px 
-================================*/
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 990px) {
+  /* PREF */
 
-	/* HEADER ==================== */
+  .container {
+    max-width: 690px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  /* HEADER ==================== */
+
   nav.main-nav {
     display: none;
   }
@@ -59,12 +62,15 @@
   }
 }
 
-/* ==============================
-5)750px 
-================================*/
 @media only screen and (max-width: 750px) {
+  /* PREF =============== */
 
-	/* HEADER ==================== */
+  .container {
+    max-width: 510px;
+  }
+
+  /* HEADER ==================== */
+
   header {
     width: calc(100% - 60px);
     top: 30px;
@@ -72,16 +78,23 @@
   }
 }
 
-/* ==============================
-6)550px 
-================================*/
 @media only screen and (max-width: 550px) {
+  /* PREF ====================*/
 
-	/* HEADER ==================== */
+  h1.section-title {
+    font-size: 36px;
+  }
+  .button {
+    font-size: 12px;
+    width: 153px;
+    height: 52px;
+  }
+
+  /* HEADER ==================== */
+
   header {
     width: calc(100% - 30px);
     top: 15px;
     left: 15px;
-	}
-
+  }
 }
