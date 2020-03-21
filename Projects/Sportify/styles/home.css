@@ -10,20 +10,24 @@
 .intro-slider {
   overflow: hidden;
   width: 100%;
+  height: 100vh;
   position: relative;
+  min-height: 560px;
+  max-height: 900px;
 }
 .intro-slider .slides-wrapper {
   display: flex;
-  stransform: translateX(0);
+  height: 100%;
+  transform: translateX(0);
   transition: all 0.6s linear;
 }
 .intro-slider .slide-item {
   flex: 0 0 100%;
-  height: 100vh;
-  max-height: 900px;
+  height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
 }
 .intro-slider .slide-gradient {
   height: 100%;
@@ -48,6 +52,12 @@
 .intro-slider .slide-content {
   width: 100%;
   text-transform: uppercase;
+  transition: 0.5s ease-in opacity;
+  transition-delay: 0.3s;
+  opacity: 0;
+}
+.intro-slider .slide-item.active .slide-content {
+  opacity: 1;
 }
 .intro-slider .title-wrapper {
   letter-spacing: 3.6px;
@@ -158,4 +168,70 @@
 }
 .about-info .button-1 {
   margin-top: 30px;
+}
+
+/* QUOTE ============================================== */
+
+.quote {
+  text-align: center;
+}
+.quote-text {
+  width: 90%;
+  margin: 0 auto;
+
+  font-size: 36px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.4;
+  color: #2c2c2c;
+}
+.quote-author {
+  margin-top: 42px;
+
+  font-size: 18px;
+  font-weight: 700;
+  color: #2c2c2c;
+}
+
+/* JOIN OUR GYM ====================================*/
+
+.join-our-gym {
+  display: flex;
+}
+.join-our-gym .img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 1;
+}
+.join-our-gym .content {
+  background-color: rgb(25, 10, 73);
+  flex: 1.5;
+  padding-left: 200px;
+}
+.join-our-gym .section-title {
+  color: #fff;
+}
+.join-our-gym .adv {
+  padding: 15px 0 15px 50px;
+  position: relative;
+}
+.join-our-gym .adv::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+  width: 33px;
+  height: 33px;
+  background-image: url(../images/check.png);
+}
+.join-our-gym .buttons {
+  margin-top: 60px;
+
+  display: flex;
+}
+.join-our-gym .button-1 {
+  margin-right: 20px;
 }

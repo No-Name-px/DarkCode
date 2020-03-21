@@ -4,11 +4,19 @@ HOME RESP
 
 ====================*/
 
+/* WIDTH =========================================*/
+
 @media only screen and (max-width: 1440px) {
   /* ADVANTAGES ==================== */
 
   .advantage-item {
     padding: 100px 40px;
+  }
+
+  /* JOIN OUR GYM ====================*/
+
+  .join-our-gym .content {
+    padding-left: 5%;
   }
 }
 
@@ -44,7 +52,74 @@ HOME RESP
   .about-img img {
     width: 80%;
   }
+
+  /* JOIN OUR GYM  ===================== */
+
+  .join-our-gym {
+    flex-direction: column;
+  }
+  .join-our-gym .img {
+    width: 100%;
+    height: 400px;
+    flex: none;
+  }
+  .join-our-gym .content {
+    padding: 0;
+  }
+  .join-our-gym .content-inner {
+    max-width: 690px;
+    width: 92%;
+    margin: auto;
+  }
 }
+
+@media only screen and (max-width: 550px) {
+  /* INTRO (SLIDER) ============== */
+
+  .intro-slider .subtitle {
+    font-size: 14px;
+  }
+  .intro-slider h1.title {
+    font-size: 45px;
+  }
+
+  /* ADVANTAGES ================ */
+
+  .advantage-item {
+    padding: 100px 30px;
+  }
+
+  /* QUOTE ========================*/
+
+  .quote-text {
+    font-size: 28px;
+  }
+  .quote-author {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  /* QUOTE =================*/
+
+  .quote-text {
+    font-size: 24px;
+  }
+  .quote-author {
+    font-size: 13px;
+  }
+
+  /* JOIN OUR GYM =============*/
+
+  .join-our-gym .buttons {
+    flex-direction: column;
+  }
+  .join-our-gym .button-1 {
+    margin: 0 0 20px 0;
+  }
+}
+
+/* HEIGHT =========================================*/
 
 @media only screen and (max-height: 650px) {
   /* INTRO (SLIDER) =============== */
@@ -69,22 +144,5 @@ HOME RESP
   .intro-slider .controller-item.active {
     width: 35px;
     height: 35px;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  /* INTRO (SLIDER) ============== */
-
-  .intro-slider .subtitle {
-    font-size: 14px;
-  }
-  .intro-slider h1.title {
-    font-size: 45px;
-  }
-
-  /* ADVANTAGES ================ */
-
-  .advantage-item {
-    padding: 100px 30px;
   }
 }

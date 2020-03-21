@@ -40,6 +40,14 @@ p {
   font-weight: 400;
   color: #909090;
 }
+hr {
+  background-color: rgb(144, 144, 144);
+  border: 0;
+  height: 1px;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1150px;
+}
 section {
   padding: 95px 0;
 }
@@ -82,11 +90,14 @@ h1.section-title {
   justify-content: center;
   align-items: center;
 
+  cursor: pointer;
+
   width: 182px;
   height: 61px;
 
   font-weight: 700;
 
+  transition: all 0.4s ease;
   background-color: transparent;
   border: rgb(255, 14, 59) 2px solid;
   overflow: hidden;
@@ -97,7 +108,7 @@ h1.section-title {
   text-transform: uppercase;
   z-index: 1;
 }
-.button:hover a {
+.button-1:hover a {
   color: rgb(255, 14, 59);
 }
 .button-1::before {
@@ -114,6 +125,9 @@ h1.section-title {
 }
 .button-1:hover::before {
   transform: translate(5%, 5%) rotate(-45deg);
+}
+.button-2:hover {
+  background-color: rgb(255, 14, 59);
 }
 
 /* HEADER =========================== */
@@ -142,7 +156,7 @@ nav.main-nav {
 .header-social-networks {
   width: 15%;
   min-width: 170px;
-  max-width: 300px;
+  max-width: 250px;
 }
 nav.main-nav ul,
 .header-social-networks ul {
@@ -201,8 +215,8 @@ nav.menu-nav a:hover {
 }
 .menu-close {
   position: absolute;
-  top: 40px;
-  right: 60px;
+  top: 7%;
+  right: 7%;
   font-weight: 900;
 }
 nav.menu-nav {
@@ -220,13 +234,13 @@ nav.menu-nav {
 }
 .menu-social-networks {
   position: absolute;
-  bottom: 40px;
+  bottom: 10%;
   left: 50%;
   transform: translate(-50%);
 
   width: 30%;
-  min-width: 200px;
-  max-width: 300px;
+  min-width: 150px;
+  max-width: 170px;
 }
 .menu-social-networks ul {
   display: flex;

@@ -4,6 +4,8 @@
 
 */
 
+/* WIDTH ========================================================*/
+
 @media only screen and (max-width: 1400px) {
   /* HEADER ==================== */
 
@@ -96,5 +98,27 @@
     width: calc(100% - 30px);
     top: 15px;
     left: 15px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  section {
+    padding: 60px 0;
+  }
+}
+
+/* HEIGHT ======================================================*/
+
+@media only screen and (max-height: 370px) {
+  /* MENU =======================*/
+
+  nav.menu-nav {
+    font-size: 20px;
+    transform: translate(-50%, -60%);
+  }
+  .menu-social-networks {
+  }
+  .menu-social-networks ul {
+    font-size: 10px;
   }
 }
