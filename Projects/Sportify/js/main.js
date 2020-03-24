@@ -69,8 +69,6 @@ $(function() {
     let fixedHeader = $(".fixed-header");
 
     $(window).scroll(function() {
-      console.log($(this).scrollTop());
-
       if ($(this).scrollTop() > 140) {
         fixedHeader.css("top", "0px");
       } else {
