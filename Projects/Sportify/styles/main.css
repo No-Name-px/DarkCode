@@ -104,6 +104,10 @@ h1.section-title {
 
   position: relative;
 }
+button:active,
+button:focus {
+  outline: none;
+}
 .button a {
   text-transform: uppercase;
   z-index: 1;
