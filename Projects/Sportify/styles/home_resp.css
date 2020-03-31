@@ -82,6 +82,9 @@ HOME RESP
   .intro-slider h1.title {
     font-size: 45px;
   }
+  .intro-slider .owl-dots {
+    display: none;
+  }
 
   /* ADVANTAGES ================ */
 

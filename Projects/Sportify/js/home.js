@@ -1,11 +1,12 @@
 $(function() {
   // Init Slider Intro ========
   initHomeSlider();
+  initClassesSlider();
+  initPricingSlider();
 
   function initHomeSlider() {
-    if ($(".intro-slider").length) {
+    if ($(".intro-slider")) {
       var homeSlider = $(".intro-slider");
-      // var homeContent = $('.home_content');
       homeSlider.owlCarousel({
         items: 1,
         loop: true,
@@ -14,14 +15,59 @@ $(function() {
         nav: false,
         dots: true
       });
+    }
+  }
 
-      // homeSlider.on('changed.owl.carousel', function(event)
-      // {
-      // 	homeContent.removeClass('active');
-      // 	var currentItem = $('.slide', homeSlider).eq(event.item.index);
-      // 	var asd = currentItem.find('.home_content');
-      // 	asd.addClass('active');
-      // });
+  function initClassesSlider() {
+    if ($(".classes-slider")) {
+      var classesSlider = $(".classes-slider");
+
+      classesSlider.owlCarousel({
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          760: {
+            items: 2
+          },
+          991: {
+            items: 3
+          }
+        },
+        loop: true,
+        autoplay: true,
+        smartSpeed: 600,
+        nav: false,
+        dots: false,
+        margin: 20
+      });
+    }
+  }
+  function initPricingSlider() {
+    if ($(".pricing-slider")) {
+      var pricingSlider = $(".pricing-slider");
+
+      pricingSlider.owlCarousel({
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          760: {
+            items: 2
+          },
+          991: {
+            items: 3
+          }
+        },
+        loop: false,
+        autoplay: true,
+        smartSpeed: 600,
+        nav: false,
+        dots: false,
+        margin: 20
+      });
     }
   }
 });

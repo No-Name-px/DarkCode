@@ -74,48 +74,58 @@
   font-weight: 700;
 }
 .intro-slider .owl-dots {
-  width: 100%;
+  width: 130px;
+  height: 45px !important;
   position: absolute;
   bottom: 5%;
+  left: calc(10% + 10px);
   display: flex;
-  justify-content: center;
-}
-.intro-slider .slider-controller {
-  width: 130px;
-  height: 50px;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-
-  font-size: 18px;
+  align-items: center;
+}
+.intro-slider .owl-dot {
+  width: 30px;
+  height: 30px;
 }
 .intro-slider .owl-dot span {
   background-color: transparent !important;
-}
-.home_slider .owl-dots .owl-dot span::after {
-  display: block;
-  position: relative;
-  color: #ffffff;
+  margin: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  transition: linear 0.2s !important;
 }
 .intro-slider .owl-dot span::after {
-  content: "1.";
+  display: block;
+  position: relative;
+  top: 50%;
+  width: 100%;
+  margin: 0 !important;
+  transform: translate(0, -50%);
+  color: #ffffff;
+  font-size: 16px;
+  transition: linear 0.2s;
+}
+.intro-slider .owl-dot:nth-child(1) span::after {
+  content: "01.";
 }
 .intro-slider .owl-dot:nth-child(2) span::after {
-  content: "2.";
+  content: "02.";
 }
 .intro-slider .owl-dot:nth-child(3) span::after {
-  content: "3.";
+  content: "03.";
 }
 .intro-slider .owl-dot span:hover {
   cursor: pointer;
 }
-.intro-slider .owl-dot:not(.active) span:hover {
+.intro-slider .owl-dot:not(.active):hover span::after {
   color: rgb(255, 14, 59);
+}
+.intro-slider .owl-dot.active {
+  width: 45px !important;
+  height: 45px !important;
 }
 .intro-slider .owl-dot.active span {
   background-color: rgb(255, 14, 59) !important;
-  width: 40px;
-  height: 40px;
 }
 
 /* ADVANTAGES ======================================== */
@@ -240,4 +250,167 @@
 }
 .join-our-gym .button-1 {
   margin-right: 20px;
+}
+
+/* CLASSES ============================== */
+
+.classes-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.classes-slider .slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 72px 20px 108px 20px;
+  background-color: rgb(238, 243, 246);
+  margin-bottom: 54px;
+  height: auto !important;
+
+  transition: 0.2s linear background-color;
+  text-align: center;
+}
+.class-title {
+  color: #2c2c2c;
+  font-size: 24px;
+  margin-bottom: 20px;
+
+  transition: linear 0.2s color;
+}
+.class-image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, +50%);
+}
+.class-image img {
+  border-radius: 50%;
+  border: transparent 3px solid;
+  transition: 0.2s linear border;
+}
+.classes-slider .slide:hover {
+  background-color: rgb(25, 10, 73);
+}
+.classes-slider .slide:hover .class-title {
+  color: #fff;
+}
+.classes-slider .slide:hover img {
+  border: #ff0e3b 3px solid;
+}
+
+/* PRICING ================================= */
+
+section.pricing {
+  background: center center no-repeat;
+  background-size: cover;
+}
+.pricing-inner {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing-inner h1.section-title {
+  color: #fff;
+}
+.pricing-slider .owl-item:nth-child(even) {
+  background-color: rgb(25, 10, 73);
+}
+.pricing-slider .owl-item:nth-child(odd) {
+  background-color: #fff;
+}
+.pricing-slider .slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.pricing-inner .title-box {
+  height: 202px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.pricing-inner .title-box::before {
+  content: "";
+  display: block;
+  width: 350px;
+  height: 200px;
+  transform-origin: left bottom;
+  position: absolute;
+  transform: rotate(-20deg);
+  left: 50%;
+  top: 0px;
+  z-index: 0;
+}
+.pricing-inner .owl-item:nth-child(even) .title-box::before {
+  background-color: #ff0e3b;
+}
+.pricing-inner .owl-item:nth-child(odd) .title-box::before {
+  background-color: rgb(25, 10, 73);
+}
+.pricing-inner .title-box::after {
+  content: "";
+  display: block;
+  width: 350px;
+  height: 200px;
+  transform-origin: right bottom;
+  position: absolute;
+  transform: rotate(20deg);
+  right: 50%;
+  top: 0px;
+  z-index: 0;
+}
+.pricing-inner .owl-item:nth-child(even) .title-box::after {
+  background-color: #ff0e3b;
+}
+.pricing-inner .owl-item:nth-child(odd) .title-box::after {
+  background-color: rgb(25, 10, 73);
+}
+.pricing-inner .title-box > div {
+  position: relative;
+  z-index: 1;
+}
+.pricing-inner .pricing-name {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 40px;
+}
+.pricing-inner .pricing-price {
+  font-size: 48px;
+  margin-top: 14px;
+}
+.pricing-inner .pricing-price span {
+  font-size: 24px;
+  vertical-align: super;
+  margin-left: 5px;
+}
+.pricing-inner .pricing-per {
+  margin-top: 10px;
+}
+.pricing-content {
+  padding: 52px 0 46px 0;
+}
+.pricing-content .slide-info {
+  color: #909090;
+}
+.pricing-content .slide-info li {
+  margin-bottom: 20px;
+}
+.pricing-content .slide-info li:last-child {
+  margin-bottom: 0px;
+}
+.pricing-content .info {
+  display: block;
+
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 192, 22);
+  border-radius: 50%;
+
+  margin: 40px auto;
 }
