@@ -16,7 +16,7 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  /* PREF */
+  /* PREF =======================*/
 
   .container {
     width: 92%;
@@ -43,10 +43,22 @@
 }
 
 @media only screen and (max-width: 990px) {
-  /* PREF */
+  /* PREF =============*/
 
   .container {
     max-width: 690px;
+  }
+
+  /* FOOTER ========= */
+
+  .footer-info {
+    flex-direction: column;
+  }
+  .footer-info-item {
+    margin-top: 40px;
+  }
+  .footer-info-item:first-child {
+    margin-top: 0;
   }
 }
 
