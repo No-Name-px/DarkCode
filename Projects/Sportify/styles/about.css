@@ -1,0 +1,111 @@
+/* 
+
+	ABOUT.css
+
+*/
+
+/* ABOUT SPORTIFY ===================== */
+
+.about-sportify-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.about-sportify-inner section {
+  width: 80%;
+}
+.about-sportify .button {
+  margin-top: 50px;
+}
+.about-img {
+  width: 40%;
+  padding-left: 20px;
+  position: relative;
+  display: flex;
+}
+.about-img img {
+  position: relative;
+  height: 100%;
+  width: auto;
+}
+
+/* QUOTE ================================ */
+
+section.quote {
+  background-image: linear-gradient(to right, #7800ff, #ff0e3b);
+  padding: 46px 0;
+}
+.quote p {
+  font-size: 36px;
+  font-weight: 600;
+  font-style: italic;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+
+  margin: 0 auto;
+}
+
+/* OUR TRAINERS ============================ */
+
+.our-trainers {
+  width: 100%;
+}
+.trainers {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.trainers-item {
+  width: 25%;
+  padding: 0 10px;
+  text-align: center;
+}
+.trainer-img {
+  position: relative;
+}
+.trainer-img img {
+  width: 100%;
+  height: auto;
+}
+.trainer-info {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, +50%);
+
+  background-color: #fff;
+
+  width: 70%;
+  padding: 20px 0;
+}
+.trainer-name {
+  text-transform: uppercase;
+  color: #2c2c2c;
+  font-size: 16px;
+  font-weight: 700;
+}
+.trainer-position {
+  margin-top: 8px;
+  color: #ff0e3b;
+  font-weight: 600;
+}
+.trainer-extra {
+  padding-top: 50px;
+}
+.trainer-social {
+  display: flex;
+  width: 35%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.trainer-social a {
+  color: #190a49;
+  transition: linear 0.2s;
+}
+.trainer-social a:hover {
+  color: #ff0e3b;
+}
+.trainer-extra p {
+  margin-top: 20px;
+}

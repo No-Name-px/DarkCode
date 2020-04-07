@@ -83,6 +83,23 @@ h1.section-title {
   display: flex;
   margin: auto;
 }
+.center-background {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gradient {
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(120, 0, 255, 0.34),
+    rgba(255, 14, 59, 0.34)
+  );
+}
 
 /* BUTTONS ======================== */
 
@@ -133,6 +150,27 @@ button:focus {
 }
 .button-2:hover {
   background-color: rgb(255, 14, 59);
+}
+
+/* TITLE ============================ */
+
+.home {
+  height: 370px;
+  position: relative;
+}
+.page-title-block {
+  padding-top: 160px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 370px;
+}
+h1.page-title {
+  font-size: 60px;
+  z-index: 1;
+  text-align: center;
 }
 
 /* HEADER =========================== */

@@ -104,6 +104,12 @@
     height: 52px;
   }
 
+  /* TITLE ================ */
+
+  h1.page-title {
+    font-size: 42px;
+  }
+
   /* HEADER ==================== */
 
   header {

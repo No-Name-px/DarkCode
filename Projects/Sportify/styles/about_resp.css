@@ -1,0 +1,62 @@
+/* 
+
+	ABOUT_resp.css
+
+*/
+
+/* WIDTH ========================= */
+
+@media only screen and (max-width: 1200px) {
+  /* OUR TRAINERS ========== */
+
+  section.trainer-wrapper {
+    padding-bottom: 10px;
+  }
+  .trainers-item {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .trainer-info {
+    width: 200px;
+  }
+  .trainer-social {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  /* ABOUT SPORTIFY =======*/
+
+  .about-sportify-inner {
+    flex-direction: column;
+  }
+  .about-sportify-inner section {
+    width: 100%;
+  }
+  .about-img {
+    padding: 0;
+    width: 100%;
+  }
+  .about-img img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  /* OUR TRAINERS ============ */
+
+  .trainers-item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  /* QOUTE ================= */
+
+  .quote p {
+    font-size: 24px;
+  }
+}
+
+/* HEIGHT ======================== */
