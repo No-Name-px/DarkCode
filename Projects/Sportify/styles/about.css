@@ -109,3 +109,24 @@ section.quote {
 .trainer-extra p {
   margin-top: 20px;
 }
+
+/* GET A PERSONAL TRAINER ============================ */
+
+.personal-trainer {
+  display: flex;
+}
+.personal-trainer-img {
+  width: 45%;
+}
+.personal-trainer section {
+  width: 65%;
+  padding: 160px 140px;
+
+  background-color: #0f0432;
+}
+.personal-trainer h1.section-title {
+  color: #fff;
+}
+.personal-trainer .button {
+  margin-top: 30px;
+}

@@ -6,6 +6,14 @@
 
 /* WIDTH ========================= */
 
+@media only screen and (max-width: 1300px) {
+  /* GET A PERSONAL TRAINER ===== */
+
+  .personal-trainer section {
+    padding: 160px 80px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   /* OUR TRAINERS ========== */
 
@@ -21,6 +29,21 @@
   }
   .trainer-social {
     width: 100px;
+  }
+
+  /* GET A PERSONAL TRAINER ===== */
+
+  .personal-trainer-img {
+    width: 100%;
+    height: 600px;
+    display: flex;
+  }
+  .personal-trainer section {
+    width: 100%;
+    padding: 160px 200px;
+  }
+  .personal-trainer {
+    flex-direction: column;
   }
 }
 
@@ -41,6 +64,12 @@
     width: 100%;
     height: auto;
   }
+
+  /* GET A PERSONAL TRAINER ===== */
+
+  .personal-trainer section {
+    padding: 160px 100px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -49,6 +78,12 @@
   .trainers-item {
     width: 100%;
   }
+
+  /* GET A PERSONAL TRAINER ===== */
+
+  .personal-trainer section {
+    padding: 160px 70px;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -56,6 +91,12 @@
 
   .quote p {
     font-size: 24px;
+  }
+
+  /* GET A PERSONAL TRAINER ===== */
+
+  .personal-trainer section {
+    padding: 130px 25px;
   }
 }
 
