@@ -107,3 +107,50 @@
 .class-card:hover {
   background-color: rgb(25, 10, 73);
 }
+
+/* GET A DISCOUNT ====================== */
+
+section.get-discount {
+  padding: 155px 0;
+}
+.get-dicount-inner {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.get-dicount-inner h1.section-title {
+  color: #fff;
+}
+.get-dicount-inner .button {
+  margin: 50px auto 0px;
+}
+
+/* OUR PLUSES ====================== */
+
+.our-pluses {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+.our-pluses-item {
+  width: 32%;
+}
+.our-pluses-item i {
+  color: rgb(255, 14, 59);
+}
+.our-pluses-item h3.plus-title {
+  color: #2c2c2c;
+  font-size: 24px;
+  font-weight: 700;
+
+  margin-top: 30px;
+}
+.our-pluses-item p {
+  margin-top: 30px;
+}
