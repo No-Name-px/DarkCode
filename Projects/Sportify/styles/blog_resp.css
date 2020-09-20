@@ -1,0 +1,29 @@
+/* 
+
+	BLOG_resp.css
+
+*/
+
+@media only screen and (max-width: 1200px) {
+  /* BLOG ====================== */
+  .blog-posts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  /* BLOG ====================== */
+  section.blog {
+    width: 100%;
+  }
+  .blog-container {
+    flex-direction: column;
+  }
+
+  /* ASIDE ======================= */
+  aside {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+}

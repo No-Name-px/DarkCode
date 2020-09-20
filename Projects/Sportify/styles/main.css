@@ -19,6 +19,8 @@ MAIN.css
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -40,6 +42,34 @@ p {
   line-height: 2.1;
   font-weight: 400;
   color: #909090;
+}
+textarea,
+input[type="text"] {
+  border: none;
+  background-color: #f2f2f9;
+  height: 62px;
+  padding: 0 34px;
+  outline: none;
+
+  font-weight: 700;
+  font-size: 16px;
+}
+textarea,
+input::-webkit-input-placeholder {
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 700;
+  color: #525252;
+}
+textarea,
+input:-moz-placeholder {
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 700;
+  color: #525252;
+}
+:focus {
+  outline: none;
 }
 hr {
   background-color: rgb(144, 144, 144);
@@ -150,6 +180,19 @@ button:focus {
 }
 .button-2:hover {
   background-color: rgb(255, 14, 59);
+}
+.button-3 {
+  border: 0;
+  background-color: #f2f2f9;
+}
+.button-3 a {
+  color: #2c2c2c;
+}
+.button-3:hover {
+  background-color: rgb(255, 14, 59);
+}
+.button-3:hover a {
+  color: #fff;
 }
 
 /* TITLE ============================ */

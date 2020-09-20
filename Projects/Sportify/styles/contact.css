@@ -1,0 +1,77 @@
+/*
+
+	contact.css
+
+*/
+
+/* CONTACT */
+
+.contact-info {
+  width: 65%;
+  padding-right: 30px;
+}
+iframe {
+  width: 35%;
+}
+.contacts-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-top: 30px;
+}
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.contacts p {
+  width: calc(50% - 15px);
+}
+.contacts ul {
+  color: #2c2c2c;
+  font-size: 15px;
+
+  width: calc(50% - 15px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contacts ul > li {
+  padding-left: 25px;
+  position: relative;
+}
+.contacts ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  display: block;
+  background-color: #ff0e3b;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+.contact-form {
+  margin-top: 60px;
+}
+.form-name,
+.form-email {
+  width: calc(50% - 15px);
+}
+.form-name {
+  margin-right: 25px;
+}
+.form-subject {
+  width: 100%;
+  margin-top: 30px;
+}
+.form-message {
+  width: 100%;
+  margin-top: 30px;
+}
+.contact-form button {
+  margin-top: 30px;
+}
