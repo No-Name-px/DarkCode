@@ -4,10 +4,10 @@
 
 */
 
-/* CONTACT */
+/* CONTACT ============================== */
 
 .contact-info {
-  width: 65%;
+  width: 50%;
   padding-right: 30px;
 }
 iframe {
@@ -74,4 +74,7 @@ iframe {
 }
 .contact-form button {
   margin-top: 30px;
+}
+.google-map {
+  width: 50%;
 }
