@@ -6,7 +6,7 @@
 
 # PROJECTS
 
-[Sportify](https://no-name-px.github.io/Projects/Sportify/) - responsive - not finished
+[Sportify](https://no-name-px.github.io/Projects/Sportify/) - responsive - finished
 
 # Some CSS/HTML/JS fitures
 
