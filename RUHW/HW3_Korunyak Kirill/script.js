@@ -1,29 +1,56 @@
 $(function () {
-  var delayForAnimation = 400;
+  // Массив объектов с текстом
+  let article = [
+    {
+      text: "Как-то раз",
+    },
+    {
+      text: "Ёжик научился дышать попой",
+    },
+    {
+      text: "Сел на пенёк и задохнулся...",
+    },
+  ];
 
-  var buttons = $(document).find(".buttons button");
-  var contentInners = $(document).find(".content div");
-  var activeSlide = 0;
-  $(contentInners).fadeOut(0);
-  $(contentInners[0]).fadeIn(delayForAnimation);
-  buttons.click(function (e) {
-    $(".buttons").find(".active").removeClass("active");
+  // Генераия Конопок по длинне массива article
+  GenerateButtons(article.length);
+  let buttons = $(document).find(".buttons button");
+
+  $(buttons).click(function (e) {
+    // change active button
+    $(buttons).removeClass("active");
     $(this).addClass("active");
-    // Turn All article
+    // change text
+    $(".content").empty();
+    let dataArticle = "";
     if ($(this).attr("id") == "all") {
-      $(contentInners).fadeOut(delayForAnimation);
-      setTimeout(() => {
-        $(contentInners).fadeIn(delayForAnimation);
-      }, delayForAnimation);
+      $.each(article, function (index, el) {
+        dataArticle = dataArticle + `<h2>${el.text}</h2>`;
+      });
+    } else {
+      dataArticle = `<h2>${article[$(this).attr("id") - 1].text}</h2>`;
     }
-    // Turn article by id
-    else {
-      $(contentInners).fadeOut(delayForAnimation);
-      setTimeout(() => {
-        $(contentInners[Number($(this).attr("id")) - 1]).fadeIn(
-          delayForAnimation
-        );
-      }, delayForAnimation);
-    }
+    $(".content").append(dataArticle);
   });
+
+  function GenerateButtons(length) {
+    dataButtons = "";
+    for (let index = 0; index < length; index++) {
+      dataButtons =
+        dataButtons +
+        `<li>
+		<button id="${index + 1}">${index + 1}</button>
+	</li>`;
+    }
+    // generate button "All"
+    if (length > 1) {
+      dataButtons =
+        dataButtons +
+        `<li>
+			<button id="all">All</button>
+		</li>`;
+    }
+
+    $(".buttons").append(dataButtons);
+  }
 });
