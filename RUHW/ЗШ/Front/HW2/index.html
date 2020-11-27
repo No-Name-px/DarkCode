@@ -4,6 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>HW-2</title>
+	<!-- OWL CARUSEL -->
+	<link rel="stylesheet" href="OwlCarousel2-2.3.4/owl.carousel.css">
+	<link rel="stylesheet" href="OwlCarousel2-2.3.4/owl.theme.default.css">
+	<!-- MY STYLES -->
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="style_resp.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,30 +17,80 @@
 	<!-- NAVIGATION -->
 	<nav class="nav">
 		<div class="nav__container">
-			<div class="nav__left-section">
-				<div class="nav__logo-container center-block">
-					<div class="nav__logo"></div>
-				</div>
-				<div class="nav__links">
-					<a href="#" class="nav__link nav__link__active">Home</a>
-					<a href="#" class="nav__link">Blog</a>
-					<a href="#" class="nav__link">Features</a>
-					<a href="#" class="nav__link">Pricing</a>
-					<a href="#" class="nav__link">Documentation</a>
-				</div>
+			<div class="nav__top-section">
+				<div class="nav__logo"></div>
+				<div class="nav__hamburger"></div>
 			</div>
-			<div class="nav__right-section">
-				<div class="nav__social">
-					<a href="#" class="nav_social-icon"><img src="img/social_icons/F_icon_reversed.svg" alt="facebook"></a>
-					<a href="#" class="nav_social-icon"><img src="img/social_icons/Telegram_logo.svg" alt="telegram"></a>
-					<a href="#" class="nav_social-icon"><img src="img/social_icons/twitter.svg" alt="twitter"></a>
-					<a href="#" class="nav_social-icon"><img src="img/social_icons/Medium_icon.svg" alt="medium"></a>
+			<div class="nav__bottom-section">
+				<div class="nav__links">
+						<a href="#" class="nav__link nav__link__active">Home</a>
+						<a href="#" class="nav__link">Blog</a>
+						<a href="#" class="nav__link">Features</a>
+						<a href="#" class="nav__link">Pricing</a>
+						<a href="#" class="nav__link">Documentation</a>
 				</div>
-				<a class="button">Get started</a>
+				<div class="nav__right-section">
+					<div class="nav__social">
+						<a href="#" class="nav_social-icon"><img src="img/social_icons/F_icon_reversed.svg" alt="facebook"></a>
+						<a href="#" class="nav_social-icon"><img src="img/social_icons/Telegram_logo.svg" alt="telegram"></a>
+						<a href="#" class="nav_social-icon"><img src="img/social_icons/twitter.svg" alt="twitter"></a>
+						<a href="#" class="nav_social-icon"><img src="img/social_icons/Medium_icon.svg" alt="medium"></a>
+					</div>
+					<a class="button button__start">Get started</a>
+				</div>
 			</div>
 		</div>
 	</nav>
 	<!-- INTRO -->
-	<section class="intro"></section>
+	<section class="section-intro owl-carousel owl-theme">
+		<!-- Item 1 -->
+		<div class="item section-intro__item center-block">
+			<div class="container center-block flex-column">
+				<div class="title-block title-block__centered">
+					<div class="title-block__subtitle">Plan your life</div>
+					<h2 class="title-block__title title-block__title__large">Increase your <span class="bold">productivity</span></h2>
+					<p class="title-block__text intro-section__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.</p>
+				</div>
+				<div class="section-intro__intro-button center-block"><img src="img/Polygon.svg" alt="play"></div>
+			</div>
+		</div>
+		<!-- Item 2 -->
+		<div class="item section-intro__item center-block">
+			<div class="container center-block flex-column">
+				<div class="title-block title-block__centered">
+					<div class="title-block__subtitle">Plan your life</div>
+					<h2 class="title-block__title title-block__title__large">Increase your <span class="bold">productivity</span></h2>
+					<p class="title-block__text intro-section__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.</p>
+				</div>
+				<div class="section-intro__intro-button center-block"><img src="img/Polygon.svg" alt="play"></div>
+			</div>
+		</div>
+		<!-- Item 3 -->
+		<div class="item section-intro__item center-block">
+			<div class="container center-block flex-column">
+				<div class="title-block title-block__centered">
+					<div class="title-block__subtitle">Plan your life</div>
+					<h2 class="title-block__title title-block__title__large">Increase your <span class="bold">productivity</span></h2>
+					<p class="title-block__text intro-section__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.</p>
+				</div>
+				<div class="section-intro__intro-button center-block"><img src="img/Polygon.svg" alt="play"></div>
+			</div>
+		</div>
+	</section>
+	<!-- SPONSORS -->
+	<section class="sponsors">
+		<div class="container">
+			<div class="sponsors__box owl-carousel owl-theme">
+				<img class="item sponsors__item" src="img/sponsors/bitbucket.svg" alt="bitbucket">
+				<img class="item sponsors__item" src="img/sponsors/apple.svg" alt="apple watch">
+				<img class="item sponsors__item" src="img/sponsors/facebook.svg" alt="facebook">
+				<img class="item sponsors__item" src="img/sponsors/atlassian.svg" alt="atlassian">
+				<img class="item sponsors__item" src="img/sponsors/audi.svg" alt=audi">
+			</div>
+		</div>
+	</section>
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="OwlCarousel2-2.3.4/owl.carousel.js"></script>
 </body>
 </html>

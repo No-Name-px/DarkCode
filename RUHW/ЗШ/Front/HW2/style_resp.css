@@ -4,20 +4,21 @@
     height: auto;
     padding: 20px 0;
   }
-  .nav__logo-container {
-    height: 40px;
-    width: 100%;
-  }
-  .nav__logo {
-    width: 40px;
-    height: 40px;
-  }
   .nav__container {
     overflow: hidden;
     flex-direction: column;
     align-items: flex-start;
   }
-  .nav__left-section,
+  .nav__top-section {
+    width: 100%;
+  }
+  .nav__hamburger {
+    display: block;
+  }
+  .nav__bottom-section {
+    margin: 0;
+    flex-direction: column;
+  }
   .nav__right-section,
   .nav__links {
     flex-direction: column;
@@ -28,10 +29,6 @@
     width: 100%;
     height: auto;
     justify-content: flex-start;
-  }
-  .nav__left-section {
-    width: 100%;
-    height: auto;
   }
   .nav__links {
     margin-top: 2rem;
@@ -44,5 +41,10 @@
     max-width: 200px;
     justify-content: space-between;
     margin: 2rem 0px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  html {
+    font-size: 13px;
   }
 }
