@@ -16,10 +16,10 @@
 <body>
 	<!-- NAVIGATION -->
 	<nav class="nav">
-		<div class="nav__container">
+		<div class="container nav__container">
 			<div class="nav__top-section">
 				<div class="nav__logo"></div>
-				<div class="nav__hamburger"></div>
+				<div class="nav__hamburger"><i class="fas fa-bars"></i></div>
 			</div>
 			<div class="nav__bottom-section">
 				<div class="nav__links">
@@ -31,10 +31,10 @@
 				</div>
 				<div class="nav__right-section">
 					<div class="nav__social">
-						<a href="#" class="nav_social-icon"><img src="img/social_icons/F_icon_reversed.svg" alt="facebook"></a>
-						<a href="#" class="nav_social-icon"><img src="img/social_icons/Telegram_logo.svg" alt="telegram"></a>
-						<a href="#" class="nav_social-icon"><img src="img/social_icons/twitter.svg" alt="twitter"></a>
-						<a href="#" class="nav_social-icon"><img src="img/social_icons/Medium_icon.svg" alt="medium"></a>
+						<a href="#" class="nav__social-icon"><i class="fab fa-facebook-f"></i></a>
+						<a href="#" class="nav__social-icon"><i class="fab fa-telegram-plane"></i></a>
+						<a href="#" class="nav__social-icon"><i class="fab fa-twitter"></i></a>
+						<a href="#" class="nav__social-icon"><i class="fab fa-medium-m"></i></a>
 					</div>
 					<a class="button button__start">Get started</a>
 				</div>
@@ -89,8 +89,315 @@
 			</div>
 		</div>
 	</section>
+	<!-- PLAN and MANAGE -->
+	<section class="section-plan">
+		<div class="container section-plan__container">
+			<div class="title-block section-plan__title-block">
+				<div class="title-block__subtitle">Desktop and mobile app</div>
+				<h2 class="title-block__title"><span class="bold">Plan</span> and <span class="bold">manage</span></h2>
+				<p class="title-block__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata. Solum patrioque no sea. Mea ex malis mollis oporteat. Eum an expetenda consequat.</p>
+				<div class="button-duo">
+					<a href="#" class="button button-duo__primal">View video</a>
+					<a href="#" class="button button-duo__secondary">See features</a>
+				</div>
+			</div>
+			<img class="section-plan__img" src="img/devices.svg" alt="devices">
+		</div>
+	</section>
+	<!-- READ ABOUT -->
+	<section class="section-about">
+		<div class="container section-about__container">
+			<div class="title-block title-block__centered">
+				<div class="title-block__subtitle">About us</div>
+				<h2 class="title-block__title title-block__title__small"><span class="bold">Read about our app</span></h2>
+			</div>
+			<div class="section-about__about-app-items">
+				<div class="section-about__about-app-item">
+					<div class="section-about__item-icon center-block"><i class="fas fa-home"></i></div>
+					<div class="section-about__item-title"><span class="bold">Overview</span></div>
+					<div class="section-about__item-text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.</div>
+				</div>
+				<div class="section-about__about-app-item">
+					<div class="section-about__item-icon center-block"><i class="fas fa-folder-open"></i></div>
+					<div class="section-about__item-title"><span class="bold">Files</span></div>
+					<div class="section-about__item-text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.</div>
+				</div>
+				<div class="section-about__about-app-item">
+					<div class="section-about__item-icon center-block"><i class="fas fa-comment"></i></div>
+					<div class="section-about__item-title"><span class="bold">Meeting chats</span></div>
+					<div class="section-about__item-text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.</div>
+				</div>
+				<div class="section-about__about-app-item">
+					<div class="section-about__item-icon center-block"><i class="fas fa-download"></i></div>
+					<div class="section-about__item-title"><span class="bold">Save events</span></div>
+					<div class="section-about__item-text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.</div>
+				</div>
+			</div>
+			<div class="section-about__buttons">
+				<a href="#" class="button button__read">Read more</a>
+				<span class="section-about__decorated-span">or</span>
+				<a href="#" class="button button__start">Get started</a>
+			</div>
+		</div>
+	</section>
+	<!-- COUNTERS -->
+	<section class="section-counters">
+		<div class="section-counters__left-side">
+			<div class="container section-counters__container section-counters__container__left">
+				<div class="section-counters__icon"><i class="fas fa-tachometer-alt"></i></div>
+				<div class="section-counters__number">89%</div>
+				<div class="section-counters__text">Customers who have increased their productivity</div>
+			</div>
+		</div>
+		<div class="section-counters__right-side">
+			<div class="container section-counters__container section-counters__container__right">
+				<div class="section-counters__icon"><i class="far fa-user"></i></div>
+				<div class="section-counters__number">3123</div>
+				<div class="section-counters__text">Users who have used our application</div>
+			</div>
+		</div>
+	</section>
+	<!-- BLOG -->
+	<section class="section-blog">
+		<div class="container section-blog__container">
+			<div class="title-block title-block__centered">
+				<div class="title-block__subtitle">Our resources</div>
+				<h2 class="title-block__title title-block__title__small"><span class="bold">Start reading o ur blog</span></h2>
+			</div>
+			<div class="section-blog__blog owl-carousel owl-theme">
+				<!-- ITEM 1 -->
+				<div class="item section-blog__post">
+					<div class="section-blog__images">
+						<div class="section-blog__img">
+							<div class="section-blog__gradient"></div>
+							<i class="center-block fas fa-search"></i>
+						</div>
+						<div class="section-blog__img">
+							<div class="section-blog__gradient"></div>
+							<i class="center-block fas fa-search"></i>
+						</div>
+						<div class="section-blog__img">
+							<div class="section-blog__gradient"></div>
+							<i class="center-block fas fa-search"></i>
+						</div>
+					</div>
+					<div class="section-blog__info">
+						<div class="section-blog__header">How to start planning</div>
+						<p class="section-blog__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...
+						</p>
+						<a href="#" class="button button__start">Read now</a>
+						<a href="#" class="button button__add">Add to your bookmarks</a>
+					</div>
+				</div>
+				<!-- ITEM 2 -->
+				<div class="item section-blog__post">
+					<div class="section-blog__images">
+						<div class="section-blog__img">
+							<div class="section-blog__gradient"></div>
+							<i class="center-block fas fa-search"></i>
+						</div>
+						<div class="section-blog__img">
+							<div class="section-blog__gradient"></div>
+							<i class="center-block fas fa-search"></i>
+						</div>
+						<div class="section-blog__img">
+							<div class="section-blog__gradient"></div>
+							<i class="center-block fas fa-search"></i>
+						</div>
+					</div>
+					<div class="section-blog__info">
+						<div class="section-blog__header">How to start planning</div>
+						<p class="section-blog__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...
+						</p>
+						<a href="#" class="button button__start">Read now</a>
+						<a href="#" class="button button__add">Add to your bookmarks</a>
+					</div>
+				</div>
+				<!-- ITEM 3 -->
+				<div class="item section-blog__post">
+					<div class="section-blog__images">
+						<div class="section-blog__img">
+							<div class="section-blog__gradient"></div>
+							<i class="center-block fas fa-search"></i>
+						</div>
+						<div class="section-blog__img">
+							<div class="section-blog__gradient"></div>
+							<i class="center-block fas fa-search"></i>
+						</div>
+						<div class="section-blog__img">
+							<div class="section-blog__gradient"></div>
+							<i class="center-block fas fa-search"></i>
+						</div>
+					</div>
+					<div class="section-blog__info">
+						<div class="section-blog__header">How to start planning</div>
+						<p class="section-blog__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...
+						</p>
+						<a href="#" class="button button__start">Read now</a>
+						<a href="#" class="button button__add">Add to your bookmarks</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- QUOTES -->
+	<section class="section-quotes">
+		<div class="container section-quotes__container">
+			<div class="title-block section-quotes__title-block">
+				<div class="title-block__subtitle">Testimonials</div>
+				<h2 class="title-block__title"><span class="bold">Customers's quotes</span></h2>
+				<p class="title-block__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an.</p>
+			</div>
+			<div class="section-quotes__comments owl-carousel owl-theme">
+				<!-- ITEM 1 -->
+				<div class="item section-quotes__comment-item">
+					<div class="section-quotes__card">
+						<p class="section-quotes__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+						<img src="https://avatars.mds.yandex.net/get-zen_doc/26916/pub_5d5fe99498fe7900ac173e90_5d5fe9bcd11ba200ad7a2d6d/scale_1200" alt="photo" class="section-quotes__author-photo">
+					</div>
+				</div>
+				<!-- ITEM 2 -->
+				<div class="item section-quotes__comment-item">
+					<div class="section-quotes__card">
+						<p class="section-quotes__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+						<img src="https://avatars.mds.yandex.net/get-zen_doc/26916/pub_5d5fe99498fe7900ac173e90_5d5fe9bcd11ba200ad7a2d6d/scale_1200" alt="photo" class="section-quotes__author-photo">
+					</div>
+				</div>
+				<!-- ITEM 3 -->
+				<div class="item section-quotes__comment-item">
+					<div class="section-quotes__card">
+						<p class="section-quotes__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+						<img src="https://avatars.mds.yandex.net/get-zen_doc/26916/pub_5d5fe99498fe7900ac173e90_5d5fe9bcd11ba200ad7a2d6d/scale_1200" alt="photo" class="section-quotes__author-photo">
+					</div>
+				</div>
+				<!-- ITEM 4 -->
+				<div class="item section-quotes__comment-item">
+					<div class="section-quotes__card">
+						<p class="section-quotes__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+						<img src="https://avatars.mds.yandex.net/get-zen_doc/26916/pub_5d5fe99498fe7900ac173e90_5d5fe9bcd11ba200ad7a2d6d/scale_1200" alt="photo" class="section-quotes__author-photo">
+					</div>
+				</div>
+				<!-- ITEM 5 -->
+				<div class="item section-quotes__comment-item">
+					<div class="section-quotes__card">
+						<p class="section-quotes__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+						<img src="https://avatars.mds.yandex.net/get-zen_doc/26916/pub_5d5fe99498fe7900ac173e90_5d5fe9bcd11ba200ad7a2d6d/scale_1200" alt="photo" class="section-quotes__author-photo">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- QUESTIONS -->
+	<section class="section-questions">
+		<div class="container section-questions__container">
+			<div class="title-block title-block__centered">
+				<div class="title-block__subtitle">Customer help</div>
+				<h2 class="title-block__title title-block__title__small"><span class="bold">Frequently asked questions</span></h2>
+			</div>
+			<div class="accordion">
+				<!-- ITEM 1 -->
+				<div class="accordion__item active">
+					<div class="accordion__header"><i class="fas fa-angle-down"></i>Reque insolens in vel?</div>
+					<div class="accordion__content">
+						<p class="accordion__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+						<div class="button button__go">Go to documentation</div>
+					</div>
+				</div>
+				<!-- ITEM 2 -->
+				<div class="accordion__item">
+					<div class="accordion__header"><i class="fas fa-angle-down"></i>Vis rebum error graecis ea, id sit postea accusamus?</div>
+					<div class="accordion__content">
+						<p class="accordion__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+						<div class="button button__go">Go to documentation</div>
+					</div>
+				</div>
+				<!-- ITEM 3 -->
+				<div class="accordion__item">
+					<div class="accordion__header"><i class="fas fa-angle-down"></i>Lorem repudiandae ne nec?</div>
+					<div class="accordion__content">
+						<p class="accordion__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+						<div class="button button__go">Go to documentation</div>
+					</div>
+				</div>
+				<!-- ITEM 4 -->
+				<div class="accordion__item">
+					<div class="accordion__header"><i class="fas fa-angle-down"></i>Ad dicit numquam vel. Et eos iudico feugait percipitur?</div>
+					<div class="accordion__content">
+						<p class="accordion__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+						<div class="button button__go">Go to documentation</div>
+					</div>
+				</div>
+				<!-- ITEM 5 -->
+				<div class="accordion__item">
+					<div class="accordion__header"><i class="fas fa-angle-down"></i>Sea no dico percipitur. Fierent constituam definitiones id eum?</div>
+					<div class="accordion__content">
+						<p class="accordion__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+						<div class="button button__go">Go to documentation</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- SELL -->
+	<section class="section-sell">
+		<div class="container section-sell__container">
+			<div class="title-block title-block__centered">
+				<div class="title-block__subtitle">Plan your life</div>
+				<h2 class="title-block__title title-block__title__large">Get <span class="bold">started</span> now</h2>
+				<p class="title-block__text section-sell__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.</p>
+			</div>
+			<div class="button-duo">
+				<a href="#" class="button button-duo__primal section-sell__button-duo__primal">View video</a>
+				<a href="#" class="button button-duo__secondary section-sell__button-duo__secondary">See features</a>
+			</div>
+		</div>
+	</section>
+	<!-- FORM -->
+	<section class="section-form">
+		<div class="container section-form__container">
+			<div class="section-form__discription">
+				<div class="section-form__header"><span class="bold">Sign up for newsletter</span></div>
+				<p class="section-form__text">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero alterum.</p>
+			</div>
+			<form action="#" class="section-form__form">
+				<input class="section-form__email" type="text" autofocus name="email" placeholder="Email">
+				<input class="section-form__submit" type="submit" value="Save me">
+			</form>
+		</div>
+	</section>
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="container nav__container footer__container">
+			<nav class="nav footer__nav">
+				<div class="nav__top-section">
+					<div class="nav__logo"></div>
+					<div class="nav__hamburger"><i class="fas fa-bars"></i></div>
+				</div>
+				<div class="nav__bottom-section">
+					<div class="nav__links">
+							<a href="#" class="nav__link nav__link__active">Home</a>
+							<a href="#" class="nav__link">Blog</a>
+							<a href="#" class="nav__link">Features</a>
+							<a href="#" class="nav__link">Pricing</a>
+							<a href="#" class="nav__link">Documentation</a>
+					</div>
+					<div class="nav__right-section">
+						<div class="nav__social">
+							<a href="#" class="nav__social-icon"><i class="fab fa-facebook-f"></i></a>
+							<a href="#" class="nav__social-icon"><i class="fab fa-telegram-plane"></i></a>
+							<a href="#" class="nav__social-icon"><i class="fab fa-twitter"></i></a>
+							<a href="#" class="nav__social-icon"><i class="fab fa-medium-m"></i></a>
+						</div>
+						<a class="button button__start">Get started</a>
+					</div>
+				</div>
+			</nav>
+			<p class="footer__text">Copyright © 2018 by Random site</p>
+		</div>
+	</footer>
 	<script src="jquery-3.4.1.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="OwlCarousel2-2.3.4/owl.carousel.js"></script>
+	<script src="https://kit.fontawesome.com/e23b7ca21b.js" crossorigin="anonymous"></script>	
 </body>
 </html>
